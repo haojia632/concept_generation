@@ -1,0 +1,25 @@
+['blow', 'rotate', 'swing']
+###########################
+Pareto Front Term
+###########################
+repeat    hang    swivel    bleach    lathe    diffract    grasp    copy    blockade    deliver    
+carburize    crosslink    strip    locate    vault    localize    dump    shoulder    guard    park    
+yaw    ease    confirm    override    tally    spear    indent    dock    hasten    disrupt    
+###########################
+Top Novalty Term
+###########################
+grasp    park    relay    discern    admit    hood    prohibit    overrun    switch    visualize    
+diffract    guard    plumb    honeycomb    baffle    embed    strap    alleviate    anchor    chain    
+chip    relieve    pleat    lead    lump    bag    free    evacuate    reverse    isolate    
+###########################
+Top Feasibility Term
+###########################
+blockade    bleach    strip    locate    spear    tally    rank    adapt    lubricate    secure    
+smooth    hang    override    align    rub    burden    vault    indent    discriminate    suspend    
+clip    attach    plot    prop    orientate    humidify    zip    cantilever    lathe    swivel    
+###########################
+Random Selected Term
+###########################
+mesh    open    escape    manufacture    spill    spin    kerf    sew    irritate    mutate    
+contrast    substitute    obtain    stretch    fetch    stage    wash    trade    proliferate    sever    
+conjoin    rectify    photomask    grip    repair    disturb    proportion    inventory    adduct    bury    

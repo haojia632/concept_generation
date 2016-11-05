@@ -1,0 +1,37 @@
+Shavor : ['hold', 'trim', 'rotate']
+###########################
+Pareto Front Term
+###########################
+simulate    grasp    upstand    vault    swivel    locate    hasten    prohibit    deliver    indent    
+install    hasten    blockade    yaw    hood    relay    align    prohibit    park    locate    
+yaw    park    deliver    confirm    hang    diffract    rank    prohibit    dock    chain    
+install    park    dock    locate    hang    crosslink    grasp    vault    buffer    simulate    
+dock    chip    chain    cure    write    yaw    suspend    strip    brush    locate    
+park    buffer    write    dock    yaw    grasp    localize    cure    chip    simulate    
+###########################
+Top Novalty Term
+###########################
+reverse    hood    switch    discern    relate    adjoin    chain    strap    dilate    diffract    
+chain    copy    brush    relate    diffract    lead    evacuate    fume    surge    baffle    
+mottle    incline    subtract    pitch    anchor    baffle    discern    scavenge    lump    repeat    
+relieve    embed    lump    free    scavenge    plumb    planarize    relate    evacuate    lead    
+diffract    chip    reverse    anchor    chain    surge    splash    subtract    honeycomb    halt    
+mottle    grasp    fume    hood    reverse    brush    prohibit    incline    baffle    bag    
+###########################
+Top Feasibility Term
+###########################
+prop    burden    spear    sculpt    swivel    plot    localize    bleach    install    indent    
+rub    rank    orientate    bleach    adapt    frame    strip    swivel    dump    vault    
+dump    tape    override    humidify    lathe    rank    swivel    shoulder    plot    prop    
+rank    cantilever    core    jerk    tally    burden    secure    install    tape    orientate    
+tape    strip    spear    dump    adapt    swivel    align    dock    emphasize    divert    
+discriminate    duct    install    frame    bleach    tape    lubricate    indent    clip    blockade    
+###########################
+Random Selected Term
+###########################
+decline    skew    circumvent    maneuver    cluster    hone    fluidize    slant    sweep    analyze    
+recall    percolate    reduce    communicate    send    conceal    work    permeate    handle    blister    
+weave    bifurcate    spit    abolish    energize    tie    repeat    anneal    eject    build    
+articulate    elevate    advance    calculate    buck    impart    disseminate    scale    miniaturize    skin    
+devote    dangle    fireproof    bifurcate    compress    widen    simplify    pleat    classify    trench    
+discolor    cage    compost    tint    scorch    communicate    interfere    blend    smelt    herd    

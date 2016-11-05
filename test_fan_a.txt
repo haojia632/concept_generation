@@ -1,0 +1,25 @@
+['hold', 'contain', 'carry']
+###########################
+Pareto Front Term
+###########################
+carbonize    switch    damage    stiffen    caliper    confirm    shorten    bottle    shank    trail    
+park    exfoliate    spike    empty    lead    chain    deploy    emit    precipitate    sinter    
+cool    sew    clog    tunnel    tangle    exchange    mash    route    baffle    cube    
+###########################
+Top Novalty Term
+###########################
+caliper    park    carbonize    switch    damage    clog    confirm    chain    baffle    cream    
+emit    spark    slit    allot    neglect    relax    rupture    lead    route    reverse    
+saturate    sling    count    transform    clutch    singe    honeycomb    mash    overrun    bypass    
+###########################
+Top Feasibility Term
+###########################
+stiffen    trail    sew    shank    cool    sinter    precipitate    shoulder    confine    warehouse    
+activate    suspend    fabricate    bottle    trench    inflict    insert    vacate    randomize    thread    
+shift    shut    build    page    pack    shorten    anesthetize    amplify    dock    confirm    
+###########################
+Random Selected Term
+###########################
+burst    fill    lubricate    pad    dilute    ooze    twine    mediate    loft    expose    
+purge    starve    itch    verify    retrofit    imprint    plasticize    normalize    change    peen    
+ventilate    weather    divert    plane    dock    backflow    ration    polish    deburr    advance    

@@ -1,0 +1,37 @@
+Cup：['hold', 'contain', 'carry']
+###########################
+Pareto Front Term
+###########################
+ease    sinter    hood    confirm    appropriate    chain    suspend    caliper    tunnel    cool    
+tunnel    slit    shank    clog    chill    carbonize    shut    shorten    empty    caliper    
+sew    transform    switch    deploy    warehouse    shorten    caliper    level    park    trail    
+bottle    deploy    stiffen    baffle    sew    tangle    cube    shoulder    lead    spike    
+precipitate    damage    shank    mash    route    shoulder    carbonize    hood    trail    squeeze    
+chamfer    appropriate    sinter    empty    carbonize    sew    route    park    warehouse    mash    
+###########################
+Top Novalty Term
+###########################
+override    bypass    throttle    overrun    slit    singe    mash    emit    clutch    sling    
+spike    overrun    fade    dissect    brush    reverse    ease    circulate    park    lead    
+reverse    carbonize    overrun    neglect    slit    singe    prohibit    cease    chain    route    
+arrest    mash    plant    spike    fade    blunt    relax    clutch    cease    override    
+pleat    cream    override    prohibit    overrun    throttle    caliper    dissect    reverse    carbonize    
+brush    ease    equilibrate    throttle    spark    bypass    clog    honeycomb    count    baffle    
+###########################
+Top Feasibility Term
+###########################
+exchange    cool    stiffen    ratchet    sew    bottle    precipitate    confine    insert    fixture    
+randomize    fabricate    trench    shift    attempt    pack    control    thread    sew    bottle    
+exchange    confirm    vacate    insert    tunnel    control    dock    randomize    pack    build    
+randomize    insert    build    shift    sew    knot    sinter    cool    control    activate    
+insert    shank    sinter    tunnel    tighten    ratchet    exchange    fabricate    thread    pack    
+fixture    exchange    invade    precipitate    dock    swell    tangle    amplify    pick    shank    
+###########################
+Random Selected Term
+###########################
+clasp    maneuver    stir    change    reveal    sap    incapacitate    cleanse    quantize    define    
+focus    exude    elevate    load    equip    assess    destruct    hide    photomask    collapse    
+bubble    emerge    rescue    try    varnish    throttle    split    allow    electroform    assemble    
+groove    blink    agitate    register    chafe    protrude    oscillate    associate    transport    program    
+shell    populate    partition    steep    gather    grate    crate    lash    tan    mingle    
+envelop    log    copy    eliminate    narrow    stretch    broach    refract    curtail    heap    

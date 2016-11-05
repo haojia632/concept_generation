@@ -1,0 +1,37 @@
+Fan:['blow', 'rotate', 'adjust']
+###########################
+Pareto Front Term
+###########################
+reverse    mitigate    introduce    allot    crush    jar    skid    spin    damage    circulate    
+brace    mist    prohibit    reverse    collapse    jar    crush    emulsify    prune    stall    
+carry    prohibit    honeycomb    yaw    overrun    impel    cage    park    dissect    circulate    
+baffle    modify    feel    caliper    grab    turn    count    prohibit    crush    pool    
+reverse    mitigate    skid    impel    paint    modify    hood    dissect    tilt    crush    
+enable    mash    paint    centrifuge    introduce    prohibit    yaw    allot    backflow    carry    
+###########################
+Top Novalty Term
+###########################
+trench    allot    neglect    evacuate    brush    blunt    trail    caliper    graduate    modify    
+embed    splash    explode    infer    trail    backflow    count    arrest    damage    baffle    
+fade    spike    blunt    cage    evacuate    sublimate    trail    override    count    allot    
+mop    sling    explode    cage    infer    spark    count    evacuate    allot    slice    
+neglect    splash    clog    chain    surge    reverse    cage    stall    arrest    trap    
+place    neglect    blunt    trail    sling    sublimate    aerate    chain    graduate    damage    
+###########################
+Top Feasibility Term
+###########################
+pick    spin    paddle    pool    dissect    contract    brace    swipe    deviate    commence    
+paint    brace    deviate    tab    quiet    deflect    intercept    machine    include    shovel    
+harvest    commence    carry    mitigate    appropriate    collapse    center    tilt    ration    brace    
+stiffen    carry    enable    tilt    paddle    crush    collapse    impel    kink    commence    
+paint    tab    ignite    intercept    kink    machine    pitch    turn    carry    orientate    
+deflect    grab    tilt    include    tab    ignite    quiet    enable    swipe    appropriate    
+###########################
+Random Selected Term
+###########################
+tangle    brand    initiate    ground    fetch    string    heighten    ply    free    rate    
+enrich    integrate    stimulate    fume    sum    empty    snug    protract    corrode    fry    
+plumb    loosen    anodize    rack    irritate    sieve    photocopy    repair    streak    seep    
+bolster    scour    grip    crosslink    commutate    knit    whirl    flutter    enable    evaluate    
+scour    blanket    part    irradiate    clear    analyze    grip    excavate    eclipse    portion    
+indent    discontinue    dam    commutate    seed    ripple    tool    signify    tune    solubilize    

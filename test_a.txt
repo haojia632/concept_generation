@@ -1,0 +1,35 @@
+['blow', 'rotate', 'swing']
+###########################
+Pareto Front Term
+###########################
+paddle    provoke    feel    thread    plane    impose    solubilize    introduce    alleviate    tape    
+reverse    sew    elevate    wrench    ratchet    crowd    number    grapple    dissect    swap    
+sink    park    rope    wind    strain    ignite    broach    switch    pool    grab    
+
+
+'incorporate', 'toss', 'move', 'focus', 'soothe', 'corrupt', 'harness', 'trace', 'pivot', 'cultivate',
+'saw', 'trip', 'denature', 'decline', 'plow', 'violate', 'wobble', 'grapple', 'paddle', 'prop', 'reciprocate',
+ 'draft', 'swap', 'engrave', 'retract', 'oppose', 'feather', 'solubilize', 'sway', 'designate', 'lance', 'funnel',
+  'itch', 'track', 'pick', 'park', 'impart', 'downsize', 'cinch', 'import', 'catch', 'diminish', 'shadow', 'paste',
+   'excavate', 'reverse', 'slack', 'tuck', 'cock', 'dissect', 'ramp', 'straighten', 'randomize', 'highlight', 'trench',
+    'turn', 'fork', 'ratchet', 'smoke', 'permit', 'lever', 'constrain', 'clump', 'clad', 'wind']
+
+
+###########################
+Top Novalty Term
+###########################
+sew    plane    thread    tape    solubilize    sink    provoke    impose    strengthen    lash    
+stress    clarify    weather    sand    pilot    wound    influence    swap    coil    sandblast    
+stretch    crumble    alleviate    vulcanize    rope    mount    crimp    perforate    denote    synchronize    
+###########################
+Top Feasibility Term
+###########################
+feel    paddle    dissect    crowd    ratchet    broach    activate    grapple    pool    tote    
+saw    throw    tab    grab    varnish    pick    deploy    include    number    wrench    
+tilt    knurl    chain    dull    elevate    meter    reciprocate    appropriate    switch    carburize    
+###########################
+Random Selected Term
+###########################
+piggyback    scoop    powder    punch    move    plot    sandwich    strike    mark    fuse    
+center    congeal    thermoset    sprout    proliferate    overrun    infiltrate    fork    agglomerate    evert    
+inspect    sculpt    passivate    bolster    fit    confirm    track    latch    quilt    semiconduct    
