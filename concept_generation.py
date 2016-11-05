@@ -17,9 +17,9 @@ from deap import algorithms,base,creator,tools
 # Dimention of individual
 NDIM = 20
 # Number of each population
-NPOP = 100
+NPOP = 60
 # Generation Size
-NGEN = 20
+NGEN = 60
 # Crossover rate
 CXPB = 0.3
 # Mutation rate
@@ -30,7 +30,7 @@ ETA = 1/NDIM
 function_space = lfs.load_function_space()
 all_function_terms = function_space[0]
 all_function_vectors = function_space[1]
-existed_functions = ['blow', 'rotate', 'swing']
+existed_functions = ['blow', 'rotate']
 existed_functions_vector = np.zeros([len(existed_functions),NDIM])
 
 # The bound of attribute
@@ -96,7 +96,7 @@ def evaluation(individual):
 
 toolbox = base.Toolbox()
 #creator.create("FintnessMulti", base.Fitness,weights=(1.0,1.0))
-creator.create("FintnessMulti", base.Fitness,weights=(1.0,1.0))
+creator.create("FintnessMulti", base.Fitness,weights=(1.0,0.8))
 creator.create("Individual",list,fitness=creator.FintnessMulti)
 # Define population
 toolbox.register("attr_float",uniform, BOUND_LOW, BOUNT_UP,NDIM)
@@ -220,7 +220,7 @@ def analysis_result():
     individuals = tools.sortNondominated(result, len(result))
     
     
-    print(list(set(mapping2terms(result))))
+    print(list(set(mapping2terms(pareto_front))))
 
     front = np.array([ind.fitness.values for ind in result])
     plt.subplot(1,3,1)
@@ -228,7 +228,7 @@ def analysis_result():
     plt.grid(True)
 
     gen = logbook.select("gen")
-    avg = np.array(logbook.select("avg"))
+    avg = np.array(logbook.select("max"))
 
     plt.subplot(1,3,2)
     plt.plot(gen,avg[:,0])
@@ -242,5 +242,5 @@ def analysis_result():
 if __name__ == "__main__":
 
     termPrediction()
-    #analysis_result()
+#     analysis_result()
 
