@@ -3,6 +3,7 @@ import LoadPatentSpace as lps
 import LoadFunctionSpace as lfs
 import os.path
 import scipy.spatial.distance as dis
+import matplotlib.pyplot as plt
 
 import numpy as np
 
@@ -109,6 +110,18 @@ def experiment3():
 
     return all_novelties
 
+def experiment4():
+    existed_functions = ['blow', 'rotate']
+    novelties = []
+    for t in all_function_terms:
+        novelties.append(get_novelty(lps.get_patent_vector(existed_functions + [t])))
+        print(novelties)
+    n, bins, patches = plt.hist(novelties, 40, normed=1, facecolor='green', alpha=0.75)
+    plt.grid(True)
+    plt.xlabel('novelty')
+    plt.ylabel('number of values')
+    plt.show()
+    
 
 #Compute the novelty base on base_space
 def get_novelty(test_vector):
@@ -147,4 +160,4 @@ def build_base_space():
     np.save(base_patent_file, base_space)
 
 if __name__=="__main__":
-    print(experiment3())
+    experiment4()

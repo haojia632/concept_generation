@@ -3,6 +3,7 @@ import LoadPatentSpace as lps
 import LoadFunctionSpace as lfs
 
 import scipy.spatial.distance as dis
+import matplotlib.pyplot as plt
 
 import numpy as np
 
@@ -73,15 +74,29 @@ def experiment5():
 
     return np.array(feasibilities)
 
+def experiment4():
+    existed_functions = ['blow', 'rotate']
+    feasibilities = []
+    for t in all_function_terms:
+        feasibilities.append(get_feasibility(existed_functions + [t]))
+        print(feasibilities)
+    n, bins, patches = plt.hist(feasibilities, 40, normed=1, facecolor='green', alpha=0.75)
+    plt.grid(True)
+    plt.xlabel('feasibility')
+    plt.ylabel('number of values')
+    plt.show()
+
+
 if __name__ == "__main__":
-    result = 0
-    v = ['hold','contain','time']
-    print(get_feasibility(v))
-    
-    for _ in range(1000):
-        term_index = [np.random.randint(len(all_function_terms)) for _ in range(6)]
-        
-        patent = [all_function_terms[index] for index in term_index]
-        result = result + get_feasibility(patent)
-    
-    print(result)
+    experiment4()
+#     result = 0
+#     v = ['hold','contain','time']
+#     print(get_feasibility(v))
+#     
+#     for _ in range(1000):
+#         term_index = [np.random.randint(len(all_function_terms)) for _ in range(6)]
+#         
+#         patent = [all_function_terms[index] for index in term_index]
+#         result = result + get_feasibility(patent)
+#     
+#     print(result)
