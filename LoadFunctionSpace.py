@@ -1,15 +1,15 @@
 # This script loads the function space, if the function_space.bin exist, load the file.
 # If the function_space.bin does not exist, build the file from
-# vectorModelVectors_all_d100_w5_i1.txt 
+# vectorModelVectors_all_d100_w5_i1.txt
 import os.path
 import numpy as np
 
 data_file = 'function_space'
-# orgin_file = 'vectorModelVectors_all_d100_w5_i1.txt' 
+# orgin_file = 'vectorModelVectors_all_d100_w5_i1.txt'
 orgin_file = 'vectorModelVectors_all_d20_w5_i2.txt'
 
 def create_function_space():
-    all_function_terms = [] 
+    all_function_terms = []
     all_function_vectors = []
     count = 0
     for line in open(orgin_file):
@@ -21,7 +21,7 @@ def create_function_space():
 
     all_function_vectors = np.array(all_function_vectors)
     results = np.array([all_function_terms, all_function_vectors,[]])
-    return results 
+    return results
 
 
 def load_function_space():
@@ -41,18 +41,7 @@ if __name__ == "__main__":
     fs = load_function_space()
     ft = fs[0]
     fv = fs[1]
-    
     print(np.min(fv))
-    
     print(np.max(fv))
-    
-#     term_index = [np.random.randint(len(ft)) for _ in range(10)]
-#     
-#     print([ft[index] for index in term_index])
-#     
-    
-    
-    
-    
-    
-    
+    term_index = [np.random.randint(len(ft)) for _ in range(20)]
+    print([ft[index] for index in term_index])

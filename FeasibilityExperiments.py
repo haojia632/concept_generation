@@ -84,19 +84,18 @@ def experiment4():
     plt.grid(True)
     plt.xlabel('feasibility')
     plt.ylabel('number of values')
-    plt.show()
-
+    plt.savefig("feasibility_distribution.jpg",dpi=(300),figsize=(50,10))
 
 if __name__ == "__main__":
     experiment4()
 #     result = 0
 #     v = ['hold','contain','time']
 #     print(get_feasibility(v))
-#     
+#
 #     for _ in range(1000):
 #         term_index = [np.random.randint(len(all_function_terms)) for _ in range(6)]
-#         
+#
 #         patent = [all_function_terms[index] for index in term_index]
 #         result = result + get_feasibility(patent)
-#     
+#
 #     print(result)

@@ -120,8 +120,8 @@ def experiment4():
     plt.grid(True)
     plt.xlabel('novelty')
     plt.ylabel('number of values')
-    plt.show()
-    
+    plt.savefig("novelty_distribution.jpg",dpi=(300),figsize=(50,10))
+
 
 #Compute the novelty base on base_space
 def get_novelty(test_vector):
@@ -129,7 +129,7 @@ def get_novelty(test_vector):
     if not os.path.exists(base_patent_file + '.npy'):
         build_base_space()
     base_space = np.load(base_patent_file + '.npy')
-    
+
     for v in base_space:
         # compute consine value
         dist = dis.cosine(test_vector,v)

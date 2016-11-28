@@ -36,6 +36,25 @@ existed_functions_vector = np.zeros([len(existed_functions),NDIM])
 # The bound of attribute
 BOUND_LOW, BOUNT_UP = np.min(all_function_vectors),np.max(all_function_vectors)
 
+global DATA_FILE_NAME
+DATA_FILE_NAME_INIT = "paper_data" + os.sep + "data" + os.sep + "term_prediction_many_"
+DATA_FILE_NAME = DATA_FILE_NAME_INIT
+DATA_FILE_NAME_END = ".pkl"
+
+global IMAGE1_FILE_NAME
+IMAGE1_FILE_NAME_INIT = "paper_data" + os.sep + "figure" + os.sep + "max_result_"
+IMAGE1_FILE_NAME = IMAGE1_FILE_NAME_INIT
+
+global IMAGE2_FILE_NAME
+IMAGE2_FILE_NAME_INIT = "paper_data" + os.sep + "figure" + os.sep + "avg_result_"
+IMAGE2_FILE_NAME = IMAGE2_FILE_NAME_INIT
+IMGAGE_FINE_NAME_END = ".jpg"
+
+LOG_FILE_NAME = "paper_data" + os.sep + "log" + os.sep + "log_"
+LOG_FILE_NAME_END = ".txt"
+
+global log_file
+
 def termPrediction():
     """
         This is  the algorithm used to predict the next function term
@@ -53,9 +72,9 @@ def termPrediction():
     # Mapping the nsga2 result to real function terms
     result_vector = mapping2terms(result)
 
-    if os.path.isfile("term_prediction.pkl"):
-        os.remove("term_prediction.pkl")
-    data_file = file("term_prediction.pkl",'wb')
+    if os.path.isfile(DATA_FILE_NAME+DATA_FILE_NAME_END):
+        os.remove(DATA_FILE_NAME+DATA_FILE_NAME_END)
+    data_file = file(DATA_FILE_NAME+DATA_FILE_NAME_END,'wb')
     pickle.dump(result,data_file,True)
     pickle.dump(result_vector,data_file,True)
     pickle.dump(logbook,data_file,True)
@@ -113,9 +132,6 @@ stats.register("avg",np.mean, axis=0)
 stats.register("std",np.std, axis=0)
 stats.register("min",np.min, axis=0)
 stats.register("max",np.max, axis=0)
-# Define Log object
-logbook = tools.Logbook()
-pareto_front = tools.ParetoFront()
 
 
 def nsga2():
@@ -127,6 +143,7 @@ def nsga2():
     pop = toolbox.population(n=NPOP)
     # Evaluate the individuals with an invalid fitness
     print("Start to evaluate the initial population")
+    log_file.write("Start to evaluate the initial population\n")
     invalid_ind = [ind for ind in pop if not ind.fitness.valid]
     fitnesses = toolbox.map(toolbox.evaluate, invalid_ind)
     for ind, fit in zip(invalid_ind, fitnesses):
@@ -138,11 +155,14 @@ def nsga2():
     # calculate the Statistics
     record = stats.compile(pop)
     logbook.record(gen=0, evals=len(invalid_ind), **record)
-    print(logbook.stream)
+    out_inf = logbook.stream
+    print(out_inf)
+    log_file.write(str(out_inf)+"\n")
 
     pareto_front.update(pop)
-    print(list(set(mapping2terms(pareto_front))))
-
+    out_inf = list(set(mapping2terms(pareto_front)))
+    print(out_inf)
+    log_file.write(str(out_inf)+"\n")
     #print("Start the evolution process")
     # Begin the generational process
     for gen in range(1, NGEN):
@@ -169,10 +189,13 @@ def nsga2():
         pop = toolbox.select(pop + offspring, NPOP)
         record = stats.compile(pop)
         logbook.record(gen=gen, evals=len(invalid_ind), **record)
-        print(logbook.stream)
-
+    	out_inf = logbook.stream
+        print(out_inf)
+        log_file.write(str(out_inf)+"\n")
         pareto_front.update(pop)
-        print(list(set(mapping2terms(pareto_front))))
+        out_inf = list(set(mapping2terms(pareto_front)))
+    	print(out_inf)
+    	log_file.write(str(out_inf)+"\n")
     return pop, logbook
 
 
@@ -209,26 +232,38 @@ def analysis_result():
     """
         This is used to analysis the data
     """
-    data_file = file("term_prediction.pkl","rb")
+    data_file = file(DATA_FILE_NAME+DATA_FILE_NAME_END,"rb")
     result = pickle.load(data_file)
     result_vector = pickle.load(data_file)
     logbook = pickle.load(data_file)
 
-    pareto_front = tools.ParetoFront()
-    pareto_front.update(result)
-    
     individuals = tools.sortNondominated(result, len(result))
-    
-    
-    print(list(set(mapping2terms(pareto_front))))
 
     front = np.array([ind.fitness.values for ind in result])
+    plt.figure()
     plt.subplot(1,3,1)
     plt.scatter(front[:,0], front[:,1], c="b")
     plt.grid(True)
 
     gen = logbook.select("gen")
-    avg = np.array(logbook.select("max"))
+    tmax = np.array(logbook.select("max"))
+
+    plt.subplot(1,3,2)
+    plt.plot(gen,tmax[:,0])
+    plt.grid(True)
+
+    plt.subplot(1,3,3)
+    plt.plot(gen,tmax[:,1])
+    plt.grid(True)
+
+    plt.savefig(IMAGE1_FILE_NAME + IMGAGE_FINE_NAME_END,dpi=(300),figsize=(50,10))
+
+    plt.figure()
+    avg = np.array(logbook.select("avg"))
+
+    plt.subplot(1,3,1)
+    plt.scatter(front[:,0], front[:,1], c="b")
+    plt.grid(True)
 
     plt.subplot(1,3,2)
     plt.plot(gen,avg[:,0])
@@ -238,9 +273,31 @@ def analysis_result():
     plt.plot(gen,avg[:,1])
     plt.grid(True)
 
-    plt.show()
+    plt.savefig(IMAGE2_FILE_NAME + IMGAGE_FINE_NAME_END,dpi=(300),figsize=(50,10))
+
+def run_many():
+    global logbook
+    global pareto_front
+    global log_file
+    global DATA_FILE_NAME
+    global IMAGE1_FILE_NAME
+    global IMAGE2_FILE_NAME
+	# run many times to analysis the result
+    for i in range(20):
+		print('The ' + str(i+1) + ' run!')
+		# Define Log object
+		logbook = tools.Logbook()
+		pareto_front = tools.ParetoFront()
+		log_file = open(LOG_FILE_NAME + str(i+1) + LOG_FILE_NAME_END,'w+')
+		DATA_FILE_NAME = DATA_FILE_NAME_INIT + str(i+1)
+		IMAGE1_FILE_NAME = IMAGE1_FILE_NAME_INIT + str(i+1)
+		IMAGE2_FILE_NAME = IMAGE2_FILE_NAME_INIT +  str(i+1)
+		termPrediction()
+
+
 if __name__ == "__main__":
 
-    termPrediction()
+#	  termPrediction()
 #     analysis_result()
 
+	run_many()
